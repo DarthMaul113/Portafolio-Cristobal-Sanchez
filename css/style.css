@@ -1,5 +1,6 @@
 * {
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Courier New', Courier, monospace;
     background-color: #393b43;
     color: #FFFFFF;
     padding: 0%;
@@ -14,6 +15,16 @@
     text-align: center;
     justify-content: center;
     background-color: #393b43;
+}
+
+body nav ul li {
+    transition: 1s;
+}
+
+body nav ul li:hover {
+    transform: scale(1.2);
+    border: none;
+
 }
 
 #navbar-list {
@@ -73,6 +84,7 @@ h3 {
     height: auto;
     grid-area: index-img;
     border-radius: 50%;
+    animation: orbit 7s linear infinite;
 }
 
 #header-text {
@@ -237,11 +249,27 @@ footer {
 
 #info-iframe {
     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    animation: orbit 7s linear infinite;
 }
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+        offset-distance: 100%;
+    }
+
+    to {
+        transform: rotate(2880deg);
+        offset-distance: 100%
+    }
+}
+
+
 
 /*Mobile Responsive*/
 
@@ -309,6 +337,6 @@ footer {
 
 @media (min-width: 768px) and (max-width:1023px) {
     * {
-        -webkit-text-size-adjust: auto;
+        /*-webkit-text-size-adjust: auto;*/
     }
 }
