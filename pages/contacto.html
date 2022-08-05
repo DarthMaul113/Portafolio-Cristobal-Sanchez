@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,68 +9,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <title>Contacto</title>
 </head>
+
 <body>
-    <nav class="container" id="navbar">
-        <ul id="navbar-list" style="list-style: none;">
-            <li class="box" id="box__incio"><a href="../index.html">Inicio</a></li>
-            <li class="box" id="box__info"><a href="../pages/info.html">Info</a></li>
-            <li class="box" id="box__gal"><a href="../pages/galeria.html">Galería</a></li>
-            <li class="box" id="box__cont"><a href="#">Contacto</a></li>
-            <li class="box" id="box__cv"><a href="../pages/cv.html">Curriculum</a></li>
-        </ul>
-    </nav>
-    <header id="site-header" class="container">
-        <div id="title-contacto">
-            <h1>Formulario de Contacto</h1>
-        </div>
-    </header>
-    <main>
-        <div id="content-contacto" class="container">
-            <img class="img-contacto" src="../img/cacho.png" alt="image not supported" width="400" height="600">
-            <div class="form-text">
-                <p class="form-text" id="form-title">Formulario de contacto</p>
-                <p class="form-text" id="form-sub">Describeme tu consulta</p>
-                <p class="form-text" id="form-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nihil quos officia magni nam cumque rem quas itaque saepe porro!</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand pt-2 ms-2 " href="#">
+                <p class="text-uppercase fw-bold">Megasuper Portafolio</p>
+            </a>
+            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-sm-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">Curriculum</a>
+                    </li>
+                </ul>
             </div>
-            <form action="post" id="form-contacto"></form>
-            <fieldset class="form-fieldset">
-                <legend>Ingresa tus datos</legend>
-                <p>
-                    <label class="form-label">Nombre:</label><br>
-                    <input class="form-input" type="text" name="nombre" placeholder="Nicolás" required>
-                </p>
-                <p>
-                    <label class="form-label">Apellido:</label><br>
-                    <input class="form-input" type="text" name="apellido" placeholder="Torres" required>
-                </p>
-                <p>
-                    <label class="form-label">Teléfono:</label><br>
-                    <input class="form-input" type="tel" name="telefono" required>
-                </p>
-                <p>
-                    <label class="form-label">Correo:</label><br>
-                    <input class="form-input" type="email" name="correo" placeholder="ejemplo@ejemplo.com" required>
-                </p>
-            </fieldset>
-            <button id="form-button">Enviar</button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="content-contacto" class="container-fluid">
+            <h1 class="text-uppercase fw-bold text-center">Formulario de Contacto</h1>
+            <div class="div-width row mx-auto mt-md-3 align-items-center flex-row-reverse">
+                <img class="d-block mt-2 mb-3 mx-auto col-10 col-md-4 col-lg-4 img-fluid" src="../img/cacho.png"
+                    alt="image not supported" width="400" height="600">
+                <div>
+                    <p class="text-white" id="form-title">Formulario de contacto</p>
+                    <p class="text-white" id="form-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                        nihil quos officia magni nam cumque rem quas itaque saepe porro!</p>
+                </div>
+
+                <!-- Wrapper container -->
+                <div class="container py-4">
+                    <form id="contactForm">
+
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name"
+                                data-sb-validations="required" />
+                        </div>
+
+                        <!-- Email address input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email Address</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                                data-sb-validations="required, email" />
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Message"
+                                style="height: 10rem;" data-sb-validations="required"></textarea>
+                        </div>
+
+                        <!-- Form submit button -->
+                        <div class="d-grid">
+                            <button class="btn btn-light btn-lg enabled" id="submitButton" type="submit">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!--Antiguo
+                    <form action="post" id="form-contacto"></form>
+                <fieldset class="form-fieldset">
+                    <legend>Ingresa tus datos</legend>
+                    <p>
+                        <label class="form-label">Nombre:</label><br>
+                        <input class="form-input" type="text" name="nombre" placeholder="Nicolás" required>
+                    </p>
+                    <p>
+                        <label class="form-label">Apellido:</label><br>
+                        <input class="form-input" type="text" name="apellido" placeholder="Torres" required>
+                    </p>
+                    <p>
+                        <label class="form-label">Teléfono:</label><br>
+                        <input class="form-input" type="tel" name="telefono" required>
+                    </p>
+                    <p>
+                        <label class="form-label">Correo:</label><br>
+                        <input class="form-input" type="email" name="correo" placeholder="ejemplo@ejemplo.com" required>
+                    </p>
+                </fieldset>
+                <button id="form-button">Enviar</button>
+                -->
+
+            </div>
         </div>
     </main>
-    <footer class="footer-grid">
-        <ul id="social">
-            <li class="links"><a href="https://github.com">Github</a></li>
-            <li class="links"><a href="https://twitter.com">Twitter</a></li>
-            <li class="links"><a href="https://plus.google.com">Google</a></li>
-            <li class="links"><a href="https://www.facebook.com">Facebook</a></li>
-            <li class="links"><a href="https://www.linkedin.com">Linkedin</a></li>
-        </ul>
-        <div id="mail">
-            <a href="mailto:contacto@contacto.com" title="Correo">contacto@contacto.com</a>
+    <footer class="text-center text-lg-start text-white">
+        <div class="p-1 pb-0">
+            <hr />
+            <section class="text-center">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <hr />
         </div>
-        <div id="info">
-            <p>© 2022 Cristóbal Sánchez</p>
+        <div class="text-center">
+            © 2022 Copyright:
+            <p class="text-white m-auto p-auto text-center">Cristóbal Sánchez</p>
+            <a class="pb-5 mt-0" href="mailto:contacto@contacto.com" title="Correo">contacto@contacto.com</a>
         </div>
     </footer>
 </body>
+
 </html>

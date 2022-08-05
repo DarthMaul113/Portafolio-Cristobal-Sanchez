@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-    <title>Curriculum</title>
+    <!--Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>CV</title>
 </head>
+
 <body>
-    <nav class="container" id="navbar">
-        <ul id="navbar-list" style="list-style: none;">
-            <li class="box" id="box__incio"><a href="../index.html">Inicio</a></li>
-            <li class="box" id="box__info"><a href="../pages/info.html">Info</a></li>
-            <li class="box" id="box__gal"><a href="../pages/galeria.html">Galería</a></li>
-            <li class="box" id="box__cont"><a href="../pages/contacto.html">Contacto</a></li>
-            <li class="box" id="box__cv"><a href="#">Curriculum</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand pt-2 ms-2 " href="#">
+                <p class="text-uppercase fw-bold">Megasuper Portafolio</p>
+            </a>
+            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-sm-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Curriculum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header>
 
     </header>
     <main>
-        <div>
-            <p style="text-align: center; font-size:xx-large">También aún en construcción</p>
+        <div class="container-fluid">
+            <p class="mb-0" style="text-align: center; font-size:xx-large">También aún en construcción</p>
         </div>
     </main>
-    <footer class="footer-grid">
-        <ul id="social">
-            <li class="links"><a href="https://github.com">Github</a></li>
-            <li class="links"><a href="https://twitter.com">Twitter</a></li>
-            <li class="links"><a href="https://plus.google.com">Google</a></li>
-            <li class="links"><a href="https://www.facebook.com">Facebook</a></li>
-            <li class="links"><a href="https://www.linkedin.com">Linkedin</a></li>
-        </ul>
-        <div id="mail">
-            <a href="mailto:contacto@contacto.com" title="Correo">contacto@contacto.com</a>
+    <footer class="text-center text-lg-start text-white">
+        <div class="p-1 pb-0">
+            <hr />
+            <section class="text-center">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <hr />
         </div>
-        <div id="info">
-            <p>© 2022 Cristóbal Sánchez</p>
+        <div class="text-center">
+            © 2022 Copyright:
+            <p class="text-white m-auto p-auto text-center">Cristóbal Sánchez</p>
+            <a class="pb-5 mt-0" href="mailto:contacto@contacto.com" title="Correo">contacto@contacto.com</a>
         </div>
     </footer>
 </body>
+
 </html>
