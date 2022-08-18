@@ -1,0 +1,29 @@
+@mixin btn-sizes ($width, $height) {
+    width: $width !important;
+    height: $height !important;
+}
+.btn{
+    @include btn-sizes(3rem, no);
+    margin: 0.35rem !important;
+}
+.btn-submit{
+    @extend .btn;
+    @include btn-sizes(15rem, no);
+    justify-self: end;
+    border: 3px solid grey !important;
+}
+
+$buttons: (
+    facebook:#4267B2,
+    twitter:#1DA1F2,
+    instagram: #E1306C,
+    linkedin:#0077b5,
+    github: #c9510c
+);
+
+@each $key, $color in $buttons {
+    .btn-#{$key}{
+        background-color: $color !important;
+    }
+
+}

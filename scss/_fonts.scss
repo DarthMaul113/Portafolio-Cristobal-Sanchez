@@ -1,1 +1,6 @@
-$default-font: 'Courier New', Courier, monospace;
+$font-families: (
+    courier-new: ('Courier New', Courier, monospace),
+    verdana: (Verdana, Geneva, Tahoma, sans-serif),
+    oswald: ("Oswald", sans-serif)
+);
+$default-font: map-get($font-families, verdana);

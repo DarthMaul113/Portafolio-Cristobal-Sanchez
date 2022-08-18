@@ -1,7 +1,5 @@
-/*Imports*/ /*Variables*/
 * {
-  /*font-family: 'Oswald', sans-serif;*/
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #393b43;
   color: #FFFFFF;
   padding: 0%;
@@ -17,6 +15,7 @@ div a p {
   font-size: medium;
 }
 div p {
+  font-family: "Courier New", Courier, monospace;
   text-align: justify;
   font-size: medium;
 }
@@ -137,6 +136,40 @@ div p {
   transform: rotateY(180deg);
 }
 
+/*Buttons*/
+.btn, .btn-submit {
+  width: 3rem !important;
+  height: no !important;
+  margin: 0.35rem !important;
+}
+
+.btn-submit {
+  width: 15rem !important;
+  height: no !important;
+  justify-self: end;
+  border: 3px solid grey !important;
+}
+
+.btn-facebook {
+  background-color: #4267B2 !important;
+}
+
+.btn-twitter {
+  background-color: #1DA1F2 !important;
+}
+
+.btn-instagram {
+  background-color: #E1306C !important;
+}
+
+.btn-linkedin {
+  background-color: #0077b5 !important;
+}
+
+.btn-github {
+  background-color: #c9510c !important;
+}
+
 /*Mobile Medium Devices*/
 @media (min-width: 768px) {
   * {
@@ -181,6 +214,9 @@ div p {
   }
   div a p {
     font-size: x-large;
+  }
+  div p {
+    font-size: large;
   }
   #index-img {
     -webkit-animation: orbit 7s linear infinite;
