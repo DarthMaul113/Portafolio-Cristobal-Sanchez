@@ -1,0 +1,24 @@
+{
+    "liveshare.presence": true,
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "files.autoSave": "afterDelay",
+    "git.confirmSync": false,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.sass": "sass"
+    },
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.autoprefix": [
+
+    ]
+}
